@@ -52,45 +52,45 @@
                     <div class="peca">
                         <label for="" class="peca-titulo">Braços</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" id="subtrair">-</buttom>
+                            <input type="text" class="controle-contador" id="visorBracos" value="00">
+                            <buttom class="controle-ajuste" id="somar">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Blindagem</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" id="subtrairBlindagem">-</buttom>
+                            <input type="text" class="controle-contador" id="visorBlindagem" value="00">
+                            <buttom class="controle-ajuste" id="somarBlidagem">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Núcleos</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" id="subtrairNucleos">-</buttom>
+                            <input type="text" class="controle-contador" id="visorNucleos" value="00">
+                            <buttom class="controle-ajuste" id="somarNucleos">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Pernas</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" id="subtrairPernas">-</buttom>
+                            <input type="text" class="controle-contador" id="visorPernas" value="00">
+                            <buttom class="controle-ajuste" id="somarPernas">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Foguetes</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom class="controle-ajuste" id="subtrairFoguete">-</buttom>
+                            <input type="text" class="controle-contador" id="visorFoguete" value="00">
+                            <buttom class="controle-ajuste" id="somarFoguete">+</buttom>
                         </div>
                     </div>
                 </div>
@@ -98,5 +98,24 @@
             </form>
         </section>
     </main>
+    <script>
+
+        //FOGUETE
+        const foguete = document.getElementById("visorPernas");
+
+        const somaFoguete = document.getElementById("somarFoguete");
+        somaFoguere.addEventListener("click", soma);
+
+        //const soma = document.getElementById("somar");
+        soma.addEventListener("click", soma)
+        function soma() {
+            soma.value = parseInt(soma) + 1;
+        }
+        const subtracao = document.getElementById("subtrair");
+        subtrair.addEventListener("click", subtrai);
+        function subtrai() {
+            subtrair.value = parseInt(subtracao) - 1;
+        }
+    </script>
 </body>
 </html>
